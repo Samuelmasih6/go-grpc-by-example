@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	addr := "localhost:500051"
+	addr := "localhost:50051"
 
 	conn, err := grpc.NewClient(addr, grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
